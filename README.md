@@ -21,7 +21,7 @@ experiences I've been part of, and the areas I'm currently exploring.
 
 ## 🌐 Live Website
 
-[sofanitkibrom.github.io](https://sofanitkibrom.github.io/)
-
+[[sofanitkibrom.github.io](https://sofanitkibrom.github.io/)
+](https://sofanitkibrom.github.io/)
 
 I'm still learning, building, and figuring out what I want to create next.
