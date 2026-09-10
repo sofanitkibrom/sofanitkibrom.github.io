@@ -1,79 +1,122 @@
-// ================================
-// MOBILE MENU
-// ================================
+/* =========================================================
+   SOFANIT KIBROM — PORTFOLIO JAVASCRIPT
+========================================================= */
 
-const menuButton = document.querySelector(".menu-btn");
-const navLinks = document.querySelector(".nav-links");
-
-menuButton.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-
-    const icon = menuButton.querySelector("i");
-
-    if (navLinks.classList.contains("active")) {
-        icon.classList.remove("fa-bars");
-        icon.classList.add("fa-xmark");
-    } else {
-        icon.classList.remove("fa-xmark");
-        icon.classList.add("fa-bars");
-    }
-});
+const menuToggle = document.querySelector(".menu-toggle");
+const mobileMenu = document.querySelector(".mobile-menu");
 
 
-// ================================
-// CLOSE MOBILE MENU AFTER CLICK
-// ================================
+// ---------------------------------------------------------
+// MOBILE MENUs
+// ---------------------------------------------------------
 
-document.querySelectorAll(".nav-links a").forEach(link => {
+if (menuToggle && mobileMenu) {
 
-    link.addEventListener("click", () => {
+    menuToggle.addEventListener("click", () => {
 
-        navLinks.classList.remove("active");
+        mobileMenu.classList.toggle("open");
 
-        const icon = menuButton.querySelector("i");
+        const isOpen = mobileMenu.classList.contains("open");
 
-        icon.classList.remove("fa-xmark");
-        icon.classList.add("fa-bars");
+        menuToggle.setAttribute(
+            "aria-label",
+            isOpen ? "Close menu" : "Open menu"
+        );
 
     });
 
-});
 
+    // Close menu after clicking a link
 
-// ================================
-// AUTOMATIC FOOTER YEAR
-// ================================
+    mobileMenu.querySelectorAll("a").forEach(link => {
 
-const year = document.getElementById("year");
+        link.addEventListener("click", () => {
 
-if (year) {
-    year.textContent = new Date().getFullYear();
+            mobileMenu.classList.remove("open");
+
+            menuToggle.setAttribute(
+                "aria-label",
+                "Open menu"
+            );
+
+        });
+
+    });
+
 }
 
 
-// ================================
-// SIMPLE SCROLL REVEAL
-// ================================
+// ---------------------------------------------------------
+// HEADER — SUBTLE SCROLL EFFECT
+// ---------------------------------------------------------
 
-const sections = document.querySelectorAll(".section");
+const header = document.querySelector(".site-header");
+
+window.addEventListener("scroll", () => {
+
+    if (!header) return;
+
+    if (window.scrollY > 30) {
+        header.style.background = "rgba(8, 9, 10, .94)";
+    } else {
+        header.style.background = "rgba(8, 9, 10, .86)";
+    }
+
+});
+
+
+// ---------------------------------------------------------
+// REVEAL ELEMENTS WHEN THEY ENTER THE SCREEN
+// ---------------------------------------------------------
+
+const revealElements = document.querySelectorAll(
+    ".interest-card, .project-feature, .project-card, .timeline-item, .skill, .soft-list > div"
+);
 
 const observer = new IntersectionObserver(
-    (entries) => {
+    entries => {
 
         entries.forEach(entry => {
 
             if (entry.isIntersecting) {
-                entry.target.classList.add("show");
+
+                entry.target.classList.add("visible");
+
+                observer.unobserve(entry.target);
+
             }
 
         });
 
     },
     {
-        threshold: 0.1
+        threshold: 0.12
     }
 );
 
-sections.forEach(section => {
-    observer.observe(section);
+
+revealElements.forEach(element => {
+
+    element.style.opacity = "0";
+    element.style.transform = "translateY(20px)";
+    element.style.transition = "opacity .6s ease, transform .6s ease";
+
+    observer.observe(element);
+
 });
+
+
+// ---------------------------------------------------------
+// REVEAL CLASS
+// ---------------------------------------------------------
+
+const revealStyle = document.createElement("style");
+
+revealStyle.textContent = `
+    .visible {
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+    }
+`;
+
+document.head.appendChild(revealStyle);
