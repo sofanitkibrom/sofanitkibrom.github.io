@@ -4,600 +4,1200 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Sofanit Kibrom | Portfolio</title>
+    <meta
+        name="description"
+        content="Sofanit Kibrom — student, builder and explorer exploring technology, software, hardware and creative ideas."
+    >
 
-    <meta name="description"
-        content="Sofanit Kibrom's personal portfolio — exploring technology, AI, software, science and creative projects.">
+    <title>Sofanit Kibrom — Student. Builder. Explorer.</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- Icons -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome icons -->
     <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     >
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- ================= NAVIGATION ================= -->
+<!-- =========================
+     HEADER
+========================= -->
 
-    <header>
-        <nav class="navbar">
+<header class="site-header">
 
-            <a href="#home" class="logo">SK<span>.</span></a>
-
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-
-            <button class="menu-btn" aria-label="Open menu">
-                <i class="fas fa-bars"></i>
-            </button>
-
-        </nav>
-    </header>
-
-
-    <!-- ================= HERO ================= -->
-
-    <main>
-
-        <section id="home" class="hero">
-
-            <div class="hero-content">
-
-                <p class="small-heading">HELLO, I'M</p>
-
-                <h1>Sofanit<br><span>Kibrom.</span></h1>
-
-                <h2>Student • Builder • Explorer</h2>
-
-                <p class="hero-description">
-                    I am a high school student who enjoys exploring technology,
-                    learning new things, and turning ideas into real projects.
-                </p>
-
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn primary-btn">
-                        View My Work
-                    </a>
-
-                    <a href="#contact" class="btn secondary-btn">
-                        Get In Touch
-                    </a>
-
-                    <a href="Sofanit-Kibrom-CV.pdf" class="btn secondary-btn" target="_blank">
-                    <i class="fas fa-file-pdf"></i> View My CV
-                    </a>
-                    
-                </div>
-
-                <div class="social-links">
-
-    <a href="https://github.com/sofanitkibrom"
-       target="_blank"
-       rel="noopener noreferrer"
-       aria-label="GitHub">
-        <i class="fab fa-github"></i>
+    <a href="#top" class="brand">
+        SOFANIT<span>.</span>
     </a>
 
-    <a href="https://www.linkedin.com/in/sofanit-kibrom-5545b13ab/"
-       target="_blank"
-       rel="noopener noreferrer"
-       aria-label="LinkedIn">
-        <i class="fab fa-linkedin"></i>
-    </a>
+    <nav class="desktop-nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experiences">Experiences</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-    <a href="https://www.instagram.com/sofanit_kibrom/"
-       target="_blank"
-       rel="noopener noreferrer"
-       aria-label="Instagram">
-        <i class="fab fa-instagram"></i>
-    </a>
+    <button class="menu-toggle" aria-label="Open menu">
+        <span></span>
+        <span></span>
+    </button>
 
-    <a href="mailto:sofanitkibrom14@gmail.com"
-       aria-label="Email">
-        <i class="fas fa-envelope"></i>
-    </a>
+</header>
+
+
+<!-- =========================
+     MOBILE MENU
+========================= -->
+
+<div class="mobile-menu">
+
+    <div class="mobile-menu-top">
+        <span>NAVIGATION</span>
+        <span>2026</span>
+    </div>
+
+    <a href="#about">01 <span>About</span> ↗</a>
+    <a href="#projects">02 <span>Projects</span> ↗</a>
+    <a href="#experiences">03 <span>Experiences</span> ↗</a>
+    <a href="#skills">04 <span>Skills</span> ↗</a>
+    <a href="#contact">05 <span>Contact</span> ↗</a>
 
 </div>
 
+
+<main id="top">
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="hero-label">
+            <span class="status-dot"></span>
+            HELLO, I'M
+        </div>
+
+        <h1 class="hero-name">
+            <span>Sofanit</span> <span>Kibrom</span>
+        </h1>
+
+        <div class="hero-role">
+            <strong>STUDENT.</strong>
+            <strong>BUILDER.</strong>
+            <strong>EXPLORER.</strong>
+        </div>
+
+        <p class="hero-description">
+            I’m a high school student exploring technology, software,
+            hardware and creative ideas, learning by actually making things.
+        </p>
+
+        <div class="hero-actions">
+
+            <a href="#projects" class="button">
+                View My Work
+                <span>↗</span>
+            </a>
+
+            <a href="#contact" class="button">
+                Get In Touch
+                <span>↗</span>
+            </a>
+
+            <a href="Sofanit-Kibrom-CV.pdf" target="_blank" class="button">
+                View My CV
+                <span>↗</span>
+            </a>
+
+        </div>
+
+        <div class="social-links">
+
+
+            <a href="https://www.linkedin.com/in/sofanit-kibrom-5545b13ab/"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a href="https://www.instagram.com/sofanit_kibrom/"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="mailto:sofanitkibrom14@gmail.com"
+               aria-label="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section id="about" class="about section">
+
+    <div class="wrap">
+
+        <div class="section-label">
+            <span>01</span>
+            ABOUT ME
+        </div>
+
+
+        <div class="about-heading">
+
+            <h2>
+                Always learning.
+                <span>Always building.</span>
+            </h2>
+
+            <div class="about-side-note">
+              <span>CURRENTLY EXPLORING</span>
+
+              <ul>
+                  <li>Web Development</li>
+                  <li>Python & Programming</li>
+                  <li>SQL & Databases</li>
+                  <li>Artificial Intelligence</li>
+                  <li>Robotics & Electronics</li>
+              </ul>
             </div>
 
-            <div class="hero-decoration">
-                <div class="circle"></div>
-                <div class="square"></div>
-                <div class="dot"></div>
-            </div>
-
-        </section>
+        </div>
 
 
-        <!-- ================= ABOUT ================= -->
+        <div class="about-story">
 
-        <section id="about" class="section">
+            <div class="story-number">01</div>
 
-            <div class="section-heading">
-                <span>01.</span>
-                <h2>About Me</h2>
-            </div>
+            <div class="story-content">
 
-            <div class="about-container">
+                <p class="story-lead">
+                    I'm a high school student who likes
+                    <span>trying things</span>, asking questions
+                    and figuring out how things work.
+                </p>
 
-                <div class="about-text">
+                <div class="story-columns">
 
                     <p>
-                        I'm Sofanit, a high school student interested in
-                        technology, science, and building things that solve
-                        real problems.
+                        I've explored programming, web development,
+                        SQL, robotics and science projects—not because
+                        I have everything planned out, but because I want
+                        to discover what actually interests me.
                     </p>
 
                     <p>
-                        I'm especially curious about the connection between
-                        software, artificial intelligence, electronics, and
-                        the systems that make technology work.
-                    </p>
-
-                    <p>
-                        Outside academics, I enjoy drawing, reading, music,
-                        animation, anime, football, and Formula 1.
-                    </p>
-
-                    <p>
-                        I'm constantly learning and looking for opportunities
-                        to turn what I learn into something real.
+                        Right now, I'm especially curious about software,
+                        AI, hardware and the things happening behind
+                        the screen. I'm learning, experimenting and
+                        building my way forward.
                     </p>
 
                 </div>
 
-                <div class="about-card">
+            </div>
 
-                    <div class="about-icon">
-                        <i class="fas fa-code"></i>
+        </div>
+
+
+        <div class="interests">
+
+            <div class="interests-heading">
+                <span>02 — INTERESTS</span>
+
+                <h3>
+                    Things that
+                    <span>keep me curious.</span>
+                </h3>
+            </div>
+
+
+            <div class="interest-grid">
+
+                <article class="interest-card interest-red">
+                    <div class="card-top">
+                        <span>01</span>
+                        <span>&lt;/&gt;</span>
                     </div>
 
-                    <h3>Currently Exploring</h3>
+                    <h4>TECH</h4>
 
-                    <ul>
-                        <li>Web Development</li>
-                        <li>Python & Programming</li>
-                        <li>SQL & Databases</li>
-                        <li>Artificial Intelligence</li>
-                        <li>Robotics & Electronics</li>
-                    </ul>
+                    <p>
+                        Programming, websites, databases, AI
+                        and understanding how digital things work.
+                    </p>
+                </article>
 
-                </div>
+
+                <article class="interest-card">
+                    <div class="card-top">
+                        <span>02</span>
+                        <span>⚙</span>
+                    </div>
+
+                    <h4>BUILDING</h4>
+
+                    <p>
+                        Robotics, experiments and turning
+                        ideas into things I can actually test.
+                    </p>
+                </article>
+
+
+                <article class="interest-card">
+                    <div class="card-top">
+                        <span>03</span>
+                        <span>✦</span>
+                    </div>
+
+                    <h4>SCIENCE</h4>
+
+                    <p>
+                        Astronomy, science fairs and questions
+                        that make me want to learn more.
+                    </p>
+                </article>
+
+
+                <article class="interest-card">
+                    <div class="card-top">
+                        <span>04</span>
+                        <span>↗</span>
+                    </div>
+
+                    <h4>CREATIVE</h4>
+
+                    <p>
+                        Drawing, music, animation, design
+                        and finding different ways to make things.
+                    </p>
+                </article>
 
             </div>
 
-        </section>
+        </div>
+
+    </div>
+
+</section>
 
 
-        <!-- ================= PROJECTS ================= -->
+<!-- =========================
+     PROJECTS
+========================= -->
 
-        <section id="projects" class="section projects-section">
+<section id="projects" class="projects section">
 
-            <div class="section-heading">
-                <span>02.</span>
-                <h2>Projects</h2>
-            </div>
+    <div class="wrap">
 
-            <p class="section-intro">
-                Some of the things I've built while learning and experimenting.
+        <div class="section-label">
+            <span>02</span>
+            PROJECTS
+        </div>
+
+        <div class="section-heading">
+            <h2>
+                Featured
+                <span>Works.</span>
+            </h2>
+
+            <p>
+                Recent projects ranging from software and
+                data systems to hands-on hardware builds.
             </p>
+        </div>
 
-            <div class="projects-grid">
+
+        <!-- =========================
+             PROJECT GRID
+        ========================= -->
+
+        <div class="project-grid">
 
 
-                <!-- PROJECT 1 -->
+            <!-- PROJECT 01 -->
 
-                <article class="project-card">
+            <article class="project-card">
 
-                    <div class="project-top">
-                        <i class="far fa-folder-open folder-icon"></i>
+                <div class="project-visual taste">
 
-                        <div class="project-links">
-                            <a href="#" aria-label="Project link">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
+                    <div class="project-number">
+                        01 / 05
                     </div>
 
-                    <h3>Taste of Ethiopia</h3>
+                    <div class="taste-content">
+
+                        <small>WEB PROJECT</small>
+
+                        <strong>
+                            TASTE<br>
+                            OF<br>
+                            ETHIOPIA
+                        </strong>
+
+                        <span>✦</span>
+
+                    </div>
+
+                    <div class="project-corner">
+                        HTML / CSS / JS
+                    </div>
+
+                </div>
+
+
+                <div class="project-details">
+
+                    <div class="project-meta">
+                        WEB DEVELOPMENT
+                    </div>
+
+                    <h3>
+                        Taste of Ethiopia
+                    </h3>
 
                     <p>
-                        A website celebrating Ethiopian food and culture,
-                        featuring recipes, categories, a gallery, favorites,
-                        and an interactive experience.
+                        A website built around Ethiopian food and culture.
+                        I created the experience from scratch, including
+                        recipes, categories, a gallery, favorites and a
+                        Discover Ethiopia section.
                     </p>
 
-                    <div class="technologies">
+                    <div class="project-tags">
                         <span>HTML</span>
                         <span>CSS</span>
-                        <span>JavaScript</span>
+                        <span>JAVASCRIPT</span>
+                        <span>LOCALSTORAGE</span>
                     </div>
 
-                </article>
+                    <div class="project-bottom">
 
+                        <span>
+                            WHAT I EXPLORED
+                        </span>
 
-                <!-- PROJECT 2 -->
-
-                <article class="project-card">
-
-                    <div class="project-top">
-                        <i class="far fa-folder-open folder-icon"></i>
-
-                        <div class="project-links">
-                            <a href="#" aria-label="Project link">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <h3>Hospital Operations Database</h3>
-
-                    <p>
-                        A SQL database project exploring hospital operations,
-                        patients, doctors, appointments, and useful insights
-                        from structured data.
-                    </p>
-
-                    <div class="technologies">
-                        <span>SQL</span>
-                        <span>Database</span>
-                        <span>VS Code</span>
-                    </div>
-
-                </article>
-
-
-                <!-- PROJECT 3 -->
-
-                <article class="project-card">
-
-                    <div class="project-top">
-                        <i class="far fa-folder-open folder-icon"></i>
-
-                        <div class="project-links">
-                            <a href="#" aria-label="Project link">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <h3>Automatic Trash Can</h3>
-
-                    <p>
-                        A robotics project designed to automate the opening
-                        of a trash can using electronics and sensors.
-                    </p>
-
-                    <div class="technologies">
-                        <span>Arduino</span>
-                        <span>Robotics</span>
-                        <span>Electronics</span>
-                    </div>
-
-                </article>
-
-
-                <!-- PROJECT 4 -->
-
-                <article class="project-card">
-
-                    <div class="project-top">
-                        <i class="far fa-folder-open folder-icon"></i>
-
-                        <div class="project-links">
-                            <a href="#" aria-label="Project link">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <h3>Beles Tool</h3>
-
-                    <p>
-                        A mechanical project developed to make removing
-                        cactus fruit easier and safer.
-                    </p>
-
-                    <div class="technologies">
-                        <span>Engineering</span>
-                        <span>Design</span>
-                        <span>Problem Solving</span>
-                    </div>
-
-                </article>
-
-
-                <!-- PROJECT 5 -->
-
-                <article class="project-card">
-
-                    <div class="project-top">
-                        <i class="far fa-folder-open folder-icon"></i>
-
-                        <div class="project-links">
-                            <a href="#" aria-label="Project link">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <h3>Biodegradable Plastic</h3>
-
-                    <p>
-                        A science project exploring the possibility of
-                        creating biodegradable plastic using potato-based
-                        materials.
-                    </p>
-
-                    <div class="technologies">
-                        <span>Biology</span>
-                        <span>Science</span>
-                        <span>Research</span>
-                    </div>
-
-                </article>
-
-
-                <!-- PROJECT 6 -->
-
-                <article class="project-card">
-
-                    <div class="project-top">
-                        <i class="far fa-folder-open folder-icon"></i>
-
-                        <div class="project-links">
-                            <a href="#" aria-label="Project link">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <h3>More Coming Soon</h3>
-
-                    <p>
-                        I'm always working on something new. This space will
-                        grow as I continue learning, experimenting, and
-                        building.
-                    </p>
-
-                    <div class="technologies">
-                        <span>Learning</span>
-                        <span>Building</span>
-                        <span>Exploring</span>
-                    </div>
-
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= EXPERIENCE ================= -->
-
-        <section id="experience" class="section">
-
-            <div class="section-heading">
-                <span>03.</span>
-                <h2>Experience & Achievements</h2>
-            </div>
-
-            <div class="timeline">
-
-                <div class="timeline-item">
-
-                    <div class="timeline-dot"></div>
-
-                    <div class="timeline-content">
-
-                        <span class="timeline-date">2026</span>
-
-                        <h3>Youths Innovate AI Mentorship Program</h3>
-
-                        <p>
-                            Selected for the 2026 cohort and exploring
-                            artificial intelligence through mentorship
-                            and learning.
-                        </p>
+                        <strong>
+                            Design · navigation · interactivity
+                        </strong>
 
                     </div>
 
                 </div>
 
+            </article>
 
-                <div class="timeline-item">
 
-                    <div class="timeline-dot"></div>
+            <!-- PROJECT 02 -->
 
-                    <div class="timeline-content">
+            <article class="project-card">
 
-                        <span class="timeline-date">2026</span>
+                <div class="project-visual database">
 
-                        <h3>Yale Young African Scholars</h3>
+                    <div class="project-number">
+                        02 / 05
+                    </div>
 
-                        <p>
-                            Participated in a leadership and academic
-                            program focused on developing young African
-                            changemakers.
-                        </p>
+                    <div class="database-art">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
 
+                    <span>SQL</span>
+
+                </div>
+
+                <div class="project-details">
+
+                    <div class="project-meta">
+                        DATABASE
+                    </div>
+
+                    <h3>
+                        Hospital Operations Database
+                    </h3>
+
+                    <p>
+                        A practical SQL project using patient,
+                        doctor, appointment, treatment and billing
+                        data to answer operational questions.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>SELECT</span>
+                        <span>JOIN</span>
+                        <span>GROUP BY</span>
+                        <span>AGGREGATES</span>
                     </div>
 
                 </div>
 
+            </article>
 
-                <div class="timeline-item">
 
-                    <div class="timeline-dot"></div>
+            <!-- PROJECT 03 -->
 
-                    <div class="timeline-content">
+            <article class="project-card">
 
-                        <span class="timeline-date">2026</span>
+                <div class="project-visual robotics">
 
-                        <h3>She Plus Tech</h3>
+                    <div class="project-number">
+                        03 / 05
+                    </div>
 
-                        <p>
-                            Participated in technology learning including
-                            programming, SQL, HTML and CSS.
-                        </p>
+                    <div class="robot">
+                        <i></i>
+                        <i></i>
+                        <b></b>
+                    </div>
 
+                    <span>ROBOTICS</span>
+
+                </div>
+
+                <div class="project-details">
+
+                    <div class="project-meta">
+                        HARDWARE
+                    </div>
+
+                    <h3>
+                        Automatic Trash Can
+                    </h3>
+
+                    <p>
+                        A hands-on project exploring sensors,
+                        automation and the connection between
+                        code and physical hardware.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>SENSORS</span>
+                        <span>ARDUINO</span>
+                        <span>SERVO</span>
                     </div>
 
                 </div>
 
+            </article>
 
-                <div class="timeline-item">
 
-                    <div class="timeline-dot"></div>
+            <!-- PROJECT 04 -->
 
-                    <div class="timeline-content">
+            <article class="project-card">
 
-                        <span class="timeline-date">2025–2026</span>
+                <div class="project-visual plastic">
 
-                        <h3>Science & Robotics Projects</h3>
+                    <div class="project-number">
+                        04 / 05
+                    </div>
 
-                        <p>
-                            Worked on robotics, biology, engineering and
-                            science projects while exploring practical
-                            problem solving.
-                        </p>
+                    <strong>
+                        BIO<br>
+                        PLASTIC
+                    </strong>
 
+                    <span>SCIENCE</span>
+
+                </div>
+
+                <div class="project-details">
+
+                    <div class="project-meta">
+                        SCIENCE
+                    </div>
+
+                    <h3>
+                        Biodegradable Plastic
+                    </h3>
+
+                    <p>
+                        An experiment exploring potato-based material
+                        as a biodegradable alternative to conventional
+                        plastic.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>EXPERIMENT</span>
+                        <span>MATERIALS</span>
+                        <span>SUSTAINABILITY</span>
                     </div>
 
                 </div>
 
-            </div>
-
-        </section>
+            </article>
 
 
-        <!-- ================= SKILLS ================= -->
+            <!-- PROJECT 05 -->
 
-        <section id="skills" class="section skills-section">
+            <article class="project-card">
 
-            <div class="section-heading">
-                <span>04.</span>
-                <h2>Skills & Technologies</h2>
+                <div class="project-visual cactus">
+
+                    <div class="project-number">
+                        05 / 05
+                    </div>
+
+                    <strong>
+                        BELES<br>
+                        TOOL
+                    </strong>
+
+                    <span>
+                        BRIGHTER GENERATION
+                    </span>
+
+                </div>
+
+                <div class="project-details">
+
+                    <div class="project-meta">
+                        MECHANICAL DESIGN
+                    </div>
+
+                    <h3>
+                        Cactus Fruit Tool
+                    </h3>
+
+                    <p>
+                        A mechanical solution to the everyday challenge
+                        of removing cactus fruit, developed through
+                        Brighter Generation Ethiopia.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>PROTOTYPING</span>
+                        <span>TEAMWORK</span>
+                        <span>DESIGN</span>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     JOURNEY
+========================= -->
+
+<section id="experiences" class="experiences">
+    <div class="wrap">
+
+        <div class="section-label">
+            <span>03</span>
+            EXPERIENCES
+        </div>
+
+        <div class="section-heading">
+
+            <h2>
+                Experiences and
+                <span>Achievements</span>
+            </h2>
+            <p>
+                Programs, projects, and experiences that have shaped how I learn,
+                build, collaborate, and explore technology.
+            </p>
+        </div>
+
+        <div class="timeline">
+
+            <!-- 2026 -->
+            <article class="timeline-item">
+                <div class="timeline-date">2026</div>
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-card">
+                    <span class="experience-type">MENTORSHIP</span>
+
+                    <h3>Youths Innovate AI Mentorship Program</h3>
+
+                    <p>
+                        Selected for the 2026 cohort from more than 800 applicants.
+                        The program is helping me explore artificial intelligence
+                        beyond simply using AI tools, with a focus on understanding AI,
+                        asking better questions, and thinking critically about its role
+                        in society.
+                    </p>
+                </div>
+            </article>
+
+
+            <!-- 2026 -->
+            <article class="timeline-item">
+                <div class="timeline-date">2026</div>
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-card">
+                    <span class="experience-type">LEADERSHIP & ACADEMICS</span>
+
+                    <h3>Yale Young African Scholars (YYAS)</h3>
+
+                    <p>
+                        Participated in Yale Young African Scholars, a leadership and
+                        academic program bringing together talented young people from
+                        across Africa. I developed my leadership, communication,
+                        collaboration, and problem-solving skills while learning
+                        alongside students from different backgrounds.
+                    </p>
+                </div>
+            </article>
+
+
+            <!-- 2026 -->
+            <article class="timeline-item">
+                <div class="timeline-date">2026</div>
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-card">
+                    <span class="experience-type">TECHNOLOGY</span>
+
+                    <h3>She Plus Tech</h3>
+
+                    <p>
+                        Participated in a technology-focused learning program where I
+                        explored programming and web development while building practical
+                        technical skills. I completed learning paths in SQL and HTML/CSS
+                        and worked on projects that helped me apply what I learned.
+                    </p>
+                </div>
+            </article>
+
+
+            <!-- 2026 -->
+            <article class="timeline-item">
+                <div class="timeline-date">2026</div>
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-card">
+                    <span class="experience-type">ORGANIZATION</span>
+
+                    <h3>FHI — National Event Organizer</h3>
+
+                    <p>
+                        Served as a National Event Organizer for Free Health Initiative
+                        Ethiopia (FHI). I contributed to organizing and supporting
+                        youth-focused activities and events, developing my communication,
+                        coordination, teamwork, and leadership skills while working with
+                        others toward a shared goal.
+                    </p>
+                </div>
+            </article>
+
+
+            <!-- 2026 -->
+            <article class="timeline-item">
+                <div class="timeline-date">2026</div>
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-card">
+                    <span class="experience-type">MEDIA & EDUCATION</span>
+
+                    <h3>Vision 4 All Academy — Social Media Teaching Hub Editor</h3>
+
+                    <p>
+                        Worked as an editor for the Social Media Teaching Hub at Vision
+                        4 All Academy. I helped organize and prepare educational content
+                        for social media, combining communication, creativity, and
+                        digital skills to make learning resources more accessible
+                        to students.
+                    </p>
+                </div>
+            </article>
+
+
+            <!-- 2025–2026 -->
+            <article class="timeline-item">
+                <div class="timeline-date">2025–2026</div>
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-card">
+                    <span class="experience-type">SCIENCE & ENGINEERING</span>
+
+                    <h3>Science & Robotics Projects</h3>
+
+                    <p>
+                        Worked on hands-on science, robotics, and engineering projects,
+                        including an automatic trash can and a biodegradable plastic
+                        experiment. These projects gave me experience with experimentation,
+                        problem-solving, prototyping, and turning ideas into practical
+                        solutions.
+                    </p>
+                </div>
+            </article>
+
+
+            <!-- 2025 -->
+            <article class="timeline-item">
+                <div class="timeline-date">2025</div>
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-card">
+                    <span class="experience-type">INNOVATION</span>
+
+                    <h3>Brighter Generation Ethiopia</h3>
+
+                    <p>
+                        Participated in the Brighter Generation Ethiopia innovation
+                        program, where my team developed a mechanical tool designed to
+                        make removing cactus fruit (beles) easier. Our project won the
+                        competition and gave me valuable experience in teamwork,
+                        engineering, prototyping, and solving a practical local problem.
+                    </p>
+                </div>
+            </article>
+
+
+            <!-- 2025 -->
+            <article class="timeline-item">
+                <div class="timeline-date">2025</div>
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-card">
+                    <span class="experience-type">ROBOTICS</span>
+
+                    <h3>Mekelle American Corner — Robotics</h3>
+
+                    <p>
+                        Participated in a summer robotics course at Mekelle American
+                        Corner, where I gained hands-on exposure to robotics, electronics,
+                        and programming while learning how hardware and software work
+                        together.
+                    </p>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<!-- =========================
+     SKILLS
+========================= -->
+
+<section id="skills" class="skills section">
+
+    <div class="wrap">
+
+        <div class="section-label">
+            <span>04</span>
+            SKILLS
+        </div>
+
+        <div class="section-heading">
+            <h2>
+                MY
+                <span>Skills</span>
+            </h2>
+
+            <p>
+                A mix of technical skills, creative tools, and the way I approach
+                problems, projects, and learning.
+            </p>
+        </div>
+
+
+        <!-- TECHNICAL SKILLS -->
+
+        <div class="skills-category">
+
+            <div class="skills-category-title">
+                <span>01</span>
+                TECHNICAL SKILLS
             </div>
 
             <div class="skills-grid">
 
-                <div class="skill">
-                    <i class="fab fa-html5"></i>
-                    <span>HTML</span>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fa-brands fa-python"></i>
+                    </div>
+
+                    <div class="skill-number">01</div>
+
+                    <div class="skill-info">
+                        <h3>Python</h3>
+                        <p>Programming</p>
+                    </div>
+
+                    <span class="skill-arrow">↗</span>
                 </div>
 
-                <div class="skill">
-                    <i class="fab fa-css3-alt"></i>
-                    <span>CSS</span>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+
+                    <div class="skill-number">02</div>
+
+                    <div class="skill-info">
+                        <h3>SQL</h3>
+                        <p>Databases</p>
+                    </div>
+
+                    <span class="skill-arrow">↗</span>
                 </div>
 
-                <div class="skill">
-                    <i class="fab fa-js"></i>
-                    <span>JavaScript</span>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fa-brands fa-html5"></i>
+                    </div>
+
+                    <div class="skill-number">03</div>
+
+                    <div class="skill-info">
+                        <h3>HTML / CSS</h3>
+                        <p>Web development</p>
+                    </div>
+
+                    <span class="skill-arrow">↗</span>
                 </div>
 
-                <div class="skill">
-                    <i class="fab fa-python"></i>
-                    <span>Python</span>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fa-brands fa-js"></i>
+                    </div>
+
+                    <div class="skill-number">04</div>
+
+                    <div class="skill-info">
+                        <h3>JavaScript</h3>
+                        <p>Web interactivity</p>
+                    </div>
+
+                    <span class="skill-arrow">↗</span>
                 </div>
 
-                <div class="skill">
-                    <i class="fas fa-database"></i>
-                    <span>SQL</span>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-pen-nib"></i>
+                    </div>
+
+                    <div class="skill-number">05</div>
+
+                    <div class="skill-info">
+                        <h3>Graphic Design</h3>
+                        <p>Visual communication</p>
+                    </div>
+
+                    <span class="skill-arrow">↗</span>
                 </div>
 
-                <div class="skill">
-                    <i class="fas fa-code"></i>
-                    <span>C Programming</span>
-                </div>
 
-                <div class="skill">
-                    <i class="fab fa-github"></i>
-                    <span>Git & GitHub</span>
-                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-microchip"></i>
+                    </div>
 
-                <div class="skill">
-                    <i class="fas fa-microchip"></i>
-                    <span>Arduino</span>
+                    <div class="skill-number">06</div>
+
+                    <div class="skill-info">
+                        <h3>Robotics</h3>
+                        <p>Hardware & prototyping</p>
+                    </div>
+
+                    <span class="skill-arrow">↗</span>
                 </div>
 
             </div>
+        </div>
 
-        </section>
+
+        <!-- HOW I WORK -->
+
+        <div class="skills-category soft-category">
+
+            <div class="skills-category-title">
+                <span>02</span>
+                HOW I WORK
+            </div>
+
+            <div class="soft-skills-grid">
+
+                <div class="soft-skill">
+                    <div class="soft-icon">
+                        <i class="fa-regular fa-lightbulb"></i>
+                    </div>
+
+                    <div>
+                        <h3>Curiosity</h3>
+                        <p>
+                            I naturally want to understand how things work.
+                        </p>
+                    </div>
+                </div>
 
 
-        <!-- ================= CONTACT ================= -->
+                <div class="soft-skill">
+                    <div class="soft-icon">
+                        <i class="fa-solid fa-puzzle-piece"></i>
+                    </div>
 
-        <section id="contact" class="section contact-section">
+                    <div>
+                        <h3>Problem Solving</h3>
+                        <p>
+                            I enjoy breaking a messy idea into smaller problems.
+                        </p>
+                    </div>
+                </div>
 
-            <div class="contact-content">
 
-                <p class="small-heading">05. WHAT'S NEXT?</p>
+                <div class="soft-skill">
+                    <div class="soft-icon">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
 
-                <h2>Let's Connect.</h2>
+                    <div>
+                        <h3>Teamwork</h3>
+                        <p>
+                            I like building, learning, and solving problems with others.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="soft-skill">
+                    <div class="soft-icon">
+                        <i class="fa-solid fa-compass"></i>
+                    </div>
+
+                    <div>
+                        <h3>Leadership</h3>
+                        <p>
+                            I’m comfortable taking responsibility and helping move
+                            things forward.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="soft-skill">
+                    <div class="soft-icon">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+
+                    <div>
+                        <h3>Creative Thinking</h3>
+                        <p>
+                            I like finding different ways to present and build ideas.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="soft-skill">
+                    <div class="soft-icon">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+
+                    <div>
+                        <h3>Communication</h3>
+                        <p>
+                            I’m learning to express ideas clearly and confidently.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- CURRENTLY EXPLORING -->
+
+        <div class="exploring-box">
+
+            <div class="exploring-label">
+                <span></span>
+                CURRENTLY EXPLORING
+            </div>
+
+            <div class="exploring-items">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    Software Engineering
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-brain"></i>
+                    Artificial Intelligence
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-microchip"></i>
+                    Hardware
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-star"></i>
+                    Astronomy
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section id="contact" class="contact section">
+
+    <div class="contact-glow"></div>
+
+    <div class="wrap">
+
+        <div class="contact-top">
+
+            <div class="section-label">
+                <span>05</span>
+                CONTACT
+            </div>
+
+            <span class="contact-status">
+                OPEN TO OPPORTUNITIES
+            </span>
+
+        </div>
+
+
+        <div class="contact-main">
+
+            <div class="contact-title">
+
+                <p>SO, WHAT'S NEXT?</p>
+
+                <h2>
+                    Let's build
+                    <span>something.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="contact-copy">
 
                 <p>
-                    I'm always interested in learning, collaborating,
-                    discovering new ideas, and building something useful.
-                </p>
+                    Have an idea, an opportunity, or just 
+                    want to say hi? Feel free to reach out
+                    I’m always open to a good conversation.
 
-                <a
-                    href="mailto:your-email@example.com"
-                    class="btn primary-btn"
-                >
-                    Say Hello
-                </a>
+                </p>
 
                 <div class="contact-links">
 
-                    <a href="https://github.com/sofanitkibrom"
-                       target="_blank">
-                        <i class="fab fa-github"></i>
-                        GitHub
+                    <a href="mailto:sofanitkibrom@gmail.com">
+                        <span class="contact-link-number">01</span>
+                        <strong>Email</strong>
+                        <span class="arrow">↗</span>
                     </a>
 
-                    <a href="https://www.linkedin.com/"
-                       target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                        LinkedIn
+                    <a href="https://www.linkedin.com/in/sofanit-kibrom-5545b13ab/">
+                        <span class="contact-link-number">02</span>
+                        <strong>LinkedIn</strong>
+                        <span class="arrow">↗</span>
+                    </a>
+
+                    <a href="https://www.instagram.com/sofanit_kibrom/">
+                        <span class="contact-link-number">03</span>
+                        <strong>Instagram</strong>
+                        <span class="arrow">↗</span>
+                    </a>
+
+                    <a href="https://t.me/sofanitkibrom">
+                        <span class="contact-link-number">04</span>
+                        <strong>Telegram</strong>
+                        <span class="arrow">↗</span>
                     </a>
 
                 </div>
 
             </div>
 
-        </section>
-
-    </main>
+        </div>
 
 
-    <!-- ================= FOOTER ================= -->
+        <div class="contact-bottom">
 
-    <footer>
+            <span>
+                CURRENTLY LEARNING · BUILDING · EXPLORING
+            </span>
 
-        <p>
-            Designed & built by <strong>Sofanit Kibrom</strong>
-        </p>
+            <span>
+                MEKELLE / ETHIOPIA
+            </span>
 
-        <p class="footer-small">
-            © <span id="year"></span> Sofanit Kibrom
-        </p>
+        </div>
 
-    </footer>
+    </div>
+
+</section>
+
+</main>
 
 
-    <script src="script.js"></script>
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <div>
+        <strong>Sofanit Kibrom</strong>
+        <span>Student · Builder · Explorer</span>
+    </div>
+
+    <span>© 2026</span>
+
+</footer>
+
+
+<script src="script.js"></script>
 
 </body>
 </html>
